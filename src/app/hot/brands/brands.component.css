@@ -1,0 +1,74 @@
+.c_brands {
+	padding: 20px 0.4rem;
+	border-bottom: 1px solid #ebebeb;
+	background-color: #fff;
+}
+.c_brands .bds_top {
+	position: relative;
+	height: 5rem;
+}
+.c_brands .bds_top img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.c_brands .bds_top_indr{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0,0,0,0.3);
+}
+.c_brands .bds_top_indr h3{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 60px;
+}
+.c_brands .bds_top_indr p{
+	margin: 5px 0 10px;
+}
+.c_brands .bds_top_indr a{
+	display: inline-block;
+	padding: 2px 5px;
+	font-size: 12px;
+	background-color: #fff;
+}
+.c_brands .bds_top_indr span{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.c_brands .bds_bom {
+	position: relative;
+	display: flex;
+}
+.c_brands .bds_bom:after{
+	position: absolute;
+	top: -16px;
+	left: 50%;
+	z-index: 100;
+	display: block;
+	content: "";
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+	margin-left: -8px;
+}
+.c_brands .bds_bom .bom_item {
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+}
+.c_brands .bds_bom .bom_item img{
+	margin: 10px 0;
+}

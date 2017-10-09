@@ -1,0 +1,40 @@
+<div class="c_container">
+	<div class="c_category">
+		<!-- TOP-BAR -->
+		<div class="cgy_top_bar">
+			<div class="btn_back">返回</div>
+			<div class="btn_tabs">
+				<span class="active" *ngFor="let item of data.tabs;let i=index" [ngClass]="{'active':i==isActive}" (click)="onTabSwitch(i)">{{item.name}}</span>
+			</div>
+			<div class="btn_home">首页</div>
+		</div>
+		
+		<!-- CONTENT -->
+		<div class="cgy_main">
+			<div *ngIf="0==isActive">
+				<dl class="cgy_item" *ngFor="let item of data.categorys">
+					<dt>{{item.title}}</dt>
+					<dd class="clearfix">
+						<span *ngFor="let value of item.items">{{value.name}}</span>
+					</dd>
+				</dl>
+			</div>
+			<div *ngIf="1==isActive" class="brands">
+				<!-- fixed-nav -->
+				<div class="bds_fix_nav">
+					<ul>
+						<li *ngFor="let item of data.brands.fixSiderBar" (click)="test('#'+item.id,item.text)">{{item.text}}</li>
+					</ul>
+				</div>
+				<div class="bds_fix_pane">{{currentField}}</div>
+				<!-- all-brands -->
+				<dl *ngFor="let item of data.brands.brandItems;let i=index" class="bds_item" id="brand_0">
+					<dt>{{item.title}}</dt>
+					<dd>
+						<p *ngFor="let item of item.items"><span>{{item.zh}}</span><span>{{item.en}}</span></p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,33 @@
+<div class="c_container">
+	<div class="c_hot">
+		<!-- Swiper -->
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img class="lazyload" src="assets/images/blank.png" data-src="assets/images/hot/slider/1.png" alt=""></div>
+	            <div class="swiper-slide"><img class="lazyload" src="assets/images/blank.png" data-src="assets/images/hot/slider/2.png" alt=""></div>
+	            <div class="swiper-slide"><img class="lazyload" src="assets/images/blank.png" data-src="assets/images/hot/slider/3.png" alt=""></div>
+	        </div>
+	        <div class="swiper-pagination"></div>
+	    </div>
+
+	    <!-- Hot-Nav -->
+		<div class="hot_nav">
+			<ul>
+				<li *ngFor="let item of hot_nav; let i=index" (click)="onGetHotByType(i)" [ngClass]="{'active':active==i}"><img src="{{item.icon}}" alt=""><span>{{item.name}}</span></li>
+			</ul>
+		</div>
+		
+		
+		<app-hot-recommend></app-hot-recommend>
+		<app-hot-recommend></app-hot-recommend>
+		<app-hot-recommend></app-hot-recommend>
+		<app-hot-recommend></app-hot-recommend>
+		<app-hot-brands></app-hot-brands>
+		<app-hot-recommend></app-hot-recommend>
+		<app-hot-recommend></app-hot-recommend>
+		<app-hot-recommend></app-hot-recommend>
+		<app-hot-recommend></app-hot-recommend>
+		<app-hot-recommend></app-hot-recommend>
+		<app-hot-brands></app-hot-brands>
+	</div>
+</div>
