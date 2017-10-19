@@ -9,14 +9,16 @@ import { CategoryModule } from './category/category.module';
 import { HotModule } from './hot/hot.module';
 import { CartModule } from './cart/cart.module';
 import { MyModule } from './my/my.module';
+import { LoginModule } from './login/login.module';
+import { DetailModule } from './detail/detail.module';
 
 /* routes */
 import { Routes } from './app.routes';
 
 /* component */
 import { AppComponent } from './app.component';
-import { AppSecooIndexComponent } from './index/index.component';
-import { AppSecooCategoryComponent } from './category/category.component';
+// import { AppSecooIndexComponent } from './index/index.component';
+// import { AppSecooCategoryComponent } from './category/category.component';
 
 /* service */
 import { AjaxService } from './common/service/ajax.service';
@@ -33,7 +35,9 @@ import { AjaxService } from './common/service/ajax.service';
     CategoryModule,
     HotModule,
     CartModule,
-    MyModule
+    MyModule,
+    LoginModule,
+    DetailModule
   ],
   providers: [AjaxService],
   bootstrap: [AppComponent]

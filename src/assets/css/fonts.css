@@ -22,3 +22,49 @@
 .fa-eye:before {
   content: "\f06e";
 }
+.fa-angle-left:before {
+  content: "\f104";
+}
+.fa-angle-right:before {
+  content: "\f105";
+}
+.fa-shopping-bag:before {
+  content: "\f290";
+}
+
+.fa-user:before {
+  content: "\f007";
+}
+.fa-file:before {
+  content: "\f15b";
+}
+.fa-gg-circle:before {
+  content: "\f261";
+}
+.fa-apple:before {
+  content: "\f179";
+}
+.fa-cc-amex:before {
+  content: "\f1f3";
+}
+.fa-info-circle:before {
+  content: "\f05a";
+}
+.fa-phone:before {
+  content: "\f095";
+}
+.fa-circle:before {
+  content: "\f111";
+}
+.fa-power-off:before {
+  content: "\f011";
+}
+.fa-heart-o:before {
+  content: "\f08a";
+}
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+.fa-home:before {
+  content: "\f015";
+}

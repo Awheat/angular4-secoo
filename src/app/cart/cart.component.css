@@ -1,0 +1,39 @@
+.c_cart {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f5f5f5;
+}
+.c_cart .header {
+	position: relative;
+	display: flex;
+	height: 45px;
+	line-height: 45px;
+	align-items:center;
+	align-content: center;
+	background-color: #fff;
+}
+.c_cart .btn_back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;	
+	text-align: center;
+}
+.c_cart .btn_back i{
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.c_cart .header_title {
+	flex: 1;
+	text-align: center;
+} 
+
+.c_cart .none {
+	text-align: center;
+}
+.c_cart .none .fa {
+	color: #888;
+	font-size: 80px;
+	padding: 100px 0 30px;
+}

@@ -23,12 +23,12 @@
 				<!-- fixed-nav -->
 				<div class="bds_fix_nav">
 					<ul>
-						<li *ngFor="let item of data.brands.fixSiderBar" (click)="test('#'+item.id,item.text)">{{item.text}}</li>
+						<li *ngFor="let item of data.brands.fixSiderBar" (click)="test(item.id,item.text)">{{item.text}}</li>
 					</ul>
 				</div>
 				<div class="bds_fix_pane">{{currentField}}</div>
 				<!-- all-brands -->
-				<dl *ngFor="let item of data.brands.brandItems;let i=index" class="bds_item" id="brand_0">
+				<dl *ngFor="let item of data.brands.brandItems;let i=index" class="bds_item" id="{{'brand_'+i}}">
 					<dt>{{item.title}}</dt>
 					<dd>
 						<p *ngFor="let item of item.items"><span>{{item.zh}}</span><span>{{item.en}}</span></p>

@@ -1,0 +1,32 @@
+<div class="c_login">
+	<div class="header">
+		<div class="btn_back"><i class="fa fa-angle-left"></i></div>
+		<div class="title">登录</div>
+		<div class="btn_regist">快速注册</div>
+	</div>
+	<!-- form -->
+	<form class="form" [formGroup]="login" (ngSubmit)="onLoginSubmit(login)">
+		<div class="form_item">
+			<p class="err">
+				<span *ngIf="login.get('username').hasError('required') && login.get('username').touched">请输入用户名</span>
+				<span *ngIf="login.get('username').hasError('username') && login.get('username').touched">请输入合法用户名</span>
+			</p>
+			<p class="box">
+				<input type="text" formControlName="username" placeholder="手机号/用户名/邮箱">
+			</p>
+		</div>
+		<div class="form_item">
+			<p class="err"><span *ngIf="login.get('password').hasError('required') && login.get('password').touched">请输入密码</span></p>
+			<p class="box">
+				<input type="text" formControlName="password" placeholder="密码">
+			</p>
+		</div>
+		<div class="form_item vcode">
+			<p class="err"></p>
+			<p class="box">
+				<input type="text" formControlName="vcode" placeholder="图形验证码"><span>图形验证码</span>
+			</p>
+		</div>
+		<button class="form_btn" type="submit">登录</button>
+	</form>
+</div>

@@ -334,8 +334,8 @@ export class AppSecooCategoryComponent implements OnInit{
 	test(id,field){
 		this.clearAllMarginTop();
 		this.currentField = field;
-		document.querySelector(id).scrollIntoView(true); 
-		document.querySelector(id).style.marginTop = "46px";
+		document.getElementById(id).scrollIntoView(); 
+		document.getElementById(id).style.marginTop = "46px";
 	}
 
 	clearAllMarginTop(){
@@ -386,21 +386,5 @@ export class AppSecooCategoryComponent implements OnInit{
 			}
 		}
 	}
-
-	// search(arr,num){
- //        var i= 0,sum=0,len=arr.length;
- //        if(!(len>0)){
- //            return;
- //        }
- //        //如果 num 的值超过了 数组之和，不在考虑范围之类
- //        for(i;i<len;i++){
- //            sum+=arr[i];
- //            if(sum>=num){
- //                console.log('需要的值i='+i);
- //                console.log(this.arr[i-1]);
- //                return;
- //            }
- //        }
- //    }
 
 }
