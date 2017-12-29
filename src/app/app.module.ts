@@ -29,7 +29,7 @@ import { AjaxService } from './common/service/ajax.service';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(Routes),
+    RouterModule.forRoot(Routes,{useHash:true}),
     HttpModule,
     IndexModule,
     CategoryModule,

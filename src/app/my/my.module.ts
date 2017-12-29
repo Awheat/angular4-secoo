@@ -1,14 +1,15 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { AuthGuard } from '../common/service/auth-guard.service';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {AuthGuard} from '../common/service/auth-guard.service';
 
-
-import { myRoutes } from './my.routes';
-import { AppSecooMyComponent } from './my.component';
+import {FixedNavModule} from '../common/modules/fixed-nav.module';
+import {myRoutes} from './my.routes';
+import {AppSecooMyComponent} from './my.component';
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(myRoutes)
+        RouterModule.forRoot(myRoutes),
+        FixedNavModule
     ],
     exports: [],
     declarations: [
@@ -16,4 +17,5 @@ import { AppSecooMyComponent } from './my.component';
     ],
     providers: [AuthGuard],
 })
-export class MyModule {}
+export class MyModule {
+}

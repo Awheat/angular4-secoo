@@ -1,7 +1,8 @@
-import { AppSecooIndexComponent } from './index.component';
-export const indexRoutes=[
-	{
-        path:'index',
-        component:AppSecooIndexComponent
+import {AppSecooIndexComponent} from './index.component';
+
+export const indexRoutes = [
+    {
+        path: 'index',
+        component: AppSecooIndexComponent
     }
 ];

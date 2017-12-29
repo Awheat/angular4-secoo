@@ -7,11 +7,11 @@
 
 #线上访问地址
 
-http://www.i728.top/pages/11/#/
+http://www.i728.top/pages/9/dist/#/index
 
 ### 手机扫码访问
 
-![Markdown](http://www.i728.top/dist/images/ewm_react_163_music.png)
+![Markdown](http://www.i728.top/dist/images/ewm_secoo.png)
 
 ### 部分截图
 
@@ -32,7 +32,7 @@ npm install
 ### 运行
 
 ```
-一.启动node模拟数据接口,进入server目录： 
+一.启动node模拟数据接口,进入server目录：
 node app.js
 
 二.启动项目,在项目根目录：
@@ -64,6 +64,7 @@ npm run build
 * 学习到了Angular4的Router,以及路由懒加载模块
 * 学习到了Service, Pipe , Http 等。
 * 学习到了图片资源的按需加载
+* 打包后发布需要修改index.html下面的base路径
 
 ### 感谢
 
