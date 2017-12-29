@@ -32,11 +32,15 @@ npm install
 ### 运行
 
 ```
-一.启动node模拟数据接口,进入server目录：
+
+一.进入server目录,启动node服务(本地模拟数据接口):
+
 node app.js
 
-二.启动项目,在项目根目录：
+二.项目根目录启动项目:
+
 npm start
+
 ```
 浏览器输入:(http://localhost:3000)即可看到效果
 
