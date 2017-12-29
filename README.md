@@ -69,6 +69,7 @@ npm run build
 * 学习到了Service, Pipe , Http 等。
 * 学习到了图片资源的按需加载
 * 打包后发布需要修改index.html下面的base路径
+* 接口请求的封装,以及回调的统一处理
 
 ### 感谢
 
