@@ -7,15 +7,15 @@
 
 #线上访问地址
 
-http://www.i728.top/pages/9/dist/#/index
+http://wuwc.i728.top/examples/9/dist/#/index
 
 ### 手机扫码访问
 
-![Markdown](http://www.i728.top/dist/images/ewm_secoo.png)
+![Markdown](http://wuwc.i728.top/static/images/ewm_angular.png)
 
 ### 部分截图
 
-![Markdown](http://www.i728.top/dist/images/secoo_preview.png)
+![Markdown](http://wuwc.i728.top/static/images/secoo_preview.png)
 
 ### 项目地址：（`git clone`）
 
